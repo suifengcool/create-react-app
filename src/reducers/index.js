@@ -1,12 +1,11 @@
-
 // 合并reducer
 import { combineReducers } from 'redux'
 import todo from './todo'
-// import visibilityFilter from './visibilityFilter'
+import filter from './filter'
 
 const todoApp = combineReducers({
     todo,
-    // visibilityFilter
+    filter
 })
 
 export default todoApp

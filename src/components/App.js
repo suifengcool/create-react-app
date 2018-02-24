@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import AddTodo from '../containers/AddTodo'
-import TodoList from '../components/TodoList'
+import TodoList from '../containers/TodoList'
+import Select from '../containers/Select'
 import logo from '../assets/logo.svg';
 import './App.sass';
 
@@ -12,12 +13,13 @@ class App extends Component {
 				    <img src={logo} className="App-logo" alt="logo" />
 				    <h1 className="App-title">Welcome to React</h1>
 				</header>
-				<p className="App-intro">
-				    A simple demo named todoList.
-				</p>
+				<h3 className="App-intro">
+				    todoList
+				</h3>
 				<div className="todoContain">
 					<AddTodo />
 					<TodoList />
+					<Select />
 				</div>
 		    </div>
 		);
